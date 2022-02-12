@@ -2,12 +2,12 @@ pipeline{
     agent Node1
         stages{
             stage ('Git'){
-                steps{
+                step{
                     'checkout scm'
                 }
             }
             stage ('report'){
-                steps{
+                step{
                     sh echo "WeeeeeeelCOME" 
                 }
             }
