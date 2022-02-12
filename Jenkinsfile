@@ -1,8 +1,7 @@
 pipeline {
-    agent {
-        node { label 'Node-one'
+    agent Node-one
         stages {
-            stage('Git') {
+            stage ('Git') {
                 steps{
                     script {
                     checkout scm
@@ -12,12 +11,9 @@ pipeline {
             stage ('report'){
                 steps{
                     script {
-                    echo "WeeeeeeelCOME"
+                    echo "WELCOME"
                     } 
                 }
             }
- 
-              }
-        }
     }
 }
