@@ -1,5 +1,5 @@
 pipeline {
-    agent [ Node1 ]
+    agent 'Node-one'
         stages {
             stage('Git') {
                 steps{
