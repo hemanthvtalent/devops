@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        node { Node-one
+        node { label 'Node-one'
         stages {
             stage('Git') {
                 steps{
