@@ -10,7 +10,9 @@ pipeline {
             }
             stage ('report'){
                 steps{
-                    sh echo "WeeeeeeelCOME" 
+                    script {
+                    echo "WeeeeeeelCOME"
+                    } 
                 }
             }
        }
