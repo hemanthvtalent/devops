@@ -8,7 +8,7 @@ pipeline{
             }
             stage ('report'){
                 steps{
-                    sh echo"WeeeeeeelCOME" 
+                    sh echo "WeeeeeeelCOME" 
                 }
             }
        }
