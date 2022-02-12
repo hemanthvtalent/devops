@@ -1,5 +1,5 @@
 pipeline{
-    agent Node1{
+    agent Node1
         stages{
             stage ('Git'){
                 steps{
@@ -11,6 +11,5 @@ pipeline{
                     sh echo"WeeeeeeelCOME" 
                 }
             }
-        }
-    }
+       }
 }
