@@ -1,13 +1,15 @@
-pipeline{
+pipeline {
     agent Node1
-        stages{
-            stage ('Git'){
-                step{
-                    'checkout scm'
+        stages {
+            stage('Git') {
+                steps{
+                    script {
+                    checkout scm
+                    }
                 }
             }
             stage ('report'){
-                step{
+                steps{
                     sh echo "WeeeeeeelCOME" 
                 }
             }
