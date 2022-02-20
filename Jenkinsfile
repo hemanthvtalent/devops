@@ -11,8 +11,8 @@ pipeline {
             stage ('filecopy'){
                 steps{
                     script {
-                    sh(rm -rf source) 
-                    sh(rm -rf dest)
+                    sh "rm -rf source"
+                    sh "rm -rf dest"
                     } 
                 }
             }
