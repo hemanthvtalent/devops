@@ -8,7 +8,7 @@ pipeline {
                     }
                 }
             }
-            stage ('filecopy'){
+            stage ('FS'){
                 steps{
                     script {
                     sh "rm -rf source"
