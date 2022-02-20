@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'Node-one' }
+    agent { label 'node1' }
         stages {
             stage ('Git') {
                 steps{
@@ -8,10 +8,10 @@ pipeline {
                     }
                 }
             }
-            stage ('report'){
+            stage ('filecopy'){
                 steps{
                     script {
-                    echo "WELCOME"
+                    'sh cp source/test.txt dest/
                     } 
                 }
             }
